@@ -1,0 +1,97 @@
+/*-----------Страница Блога---------*/
+.blog-list {
+    grid-gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    margin-bottom: 20px;
+}
+.blog-item {
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    -webkit-transition: all ease .25s;
+    -o-transition: all ease .25s;
+    transition: all ease .25s;
+    .blog-item__img {
+        height: 250px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 50px;
+    }
+    .blog-item__date {
+        padding: 0 30px;
+        margin-bottom: 20px;
+        color: #686b72;
+    }
+    .blog-item__title {
+        padding: 0 30px;
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+    &:hover {
+        -webkit-box-shadow: 0 20px 50px #2c313940;
+        box-shadow: 0 20px 50px #2c313940;
+    }
+}
+.blog-bottom {
+    grid-gap: 0;
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    margin-bottom: 20px;
+    margin-bottom: -61px;
+}
+.blog-bottom-item {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+    p {
+        font-size: 26px;
+        font-weight: 600;
+        color: #fff;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        line-height: 30px;
+        z-index: 2;
+    }
+    &:hover {
+        .blog-bottom-img {
+            transform: translate(30px, 20px) rotate(7deg) scale(1.3);
+        }
+        .blog-bottom-overlay {
+            background: #00000073;
+        }
+    }
+    .blog-bottom-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #00000042;
+        content: '';
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        z-index: 1;
+    }
+}
+.blog-bottom-img {
+    height: 100%;
+    text-align: center;
+    -webkit-transition: all ease .8s;
+    -o-transition: all ease .8s;
+    transition: all ease .8s;        
+}
+.cottages-modal__buttons {
+    grid-gap: 30px;
+    grid-template-columns: repeat(4,1fr);
+    display: grid;
+}
+.modal__buttons-item {
+    height: 200px;
+}

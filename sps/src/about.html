@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    
+    
+    @@include('tmp/_style.html')
+    
+</head>
+	
+<body>
+    @@include('tmp/_header.html')
+    <main>
+        <div class="about">
+            <div class="container">
+                <div class="basket-title">
+                    <h3>О Компании</h3>
+                </div>
+                <div class="about-block">
+                    <div class="about-text">
+                        <p>MIND TECHNOLOGY – молодая амбициозная компания, собравшая вместе профессионалов в сфере игровых компьютеров и периферии. Мы предлагаем полны ассортимент товаров и весь спектр услуг, связанных с компьютерной техникой.</p>
+                        <p>Наша цель – максимальная польза для наших клиентов от использования качественной геймерской техники.</p>
+                        <p>Мы ценим командную работу и высокое мастерство в выбранном деле – и разделяем наши ценности с клиентами и нашими партнерами.</p>
+                    </div>
+                    <div class="about-img">
+                        <img src="img/command-image.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="basket-title">
+                    <h3>Преимущества</h3>
+                </div>
+                <div class="owl-carousel owl-theme advantages-carousel">
+                    <div class="advantages-carousel-item">
+                        <h3>12 лет</h3>
+                        <p>Провели 32 киберспортивных турнира при технической поддержке</p>
+                    </div>
+                    <div class="advantages-carousel-item">
+                        <h3>12 лет</h3>
+                        <p>Провели 32 киберспортивных турнира при технической поддержке</p>
+                    </div>
+                    <div class="advantages-carousel-item">
+                        <h3>25 000 ПК</h3>
+                        <p>Провели 32 киберспортивных турнира при технической поддержке</p>
+                    </div>
+                    <div class="advantages-carousel-item">
+                        <h3>12 лет</h3>
+                        <p>Провели 32 киберспортивных турнира при технической поддержке</p>
+                    </div>
+                    <div class="advantages-carousel-item">
+                        <h3>25 000 ПК</h3>
+                        <p>Провели 32 киберспортивных турнира при технической поддержке</p>
+                    </div>
+                    <div class="advantages-carousel-item">
+                        <h3>12 лет</h3>
+                        <p>Провели 32 киберспортивных турнира при технической поддержке</p>
+                    </div>
+                    <div class="advantages-carousel-item">
+                        <h3>25 000 ПК</h3>
+                        <p>Провели 32 киберспортивных турнира при технической поддержке</p>
+                    </div>
+                    <div class="advantages-carousel-item">
+                        <h3>12 лет</h3>
+                        <p>Провели 32 киберспортивных турнира при технической поддержке</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+     @@include('tmp/_footer.html')
+
+     @@include('tmp/_script.html')
+    </body>
+</html>
+
+
+
+<style>
+
+	.bFormWrapper {
+		position: relative;
+    padding-top: 44px;
+	}
+
+	.bFormWrapper2, .row.acadp-no-margin {
+		position: relative;
+	}
+
+	.form-group.col-md-4 {
+		max-height: 200px;
+    overflow: auto;
+    margin-bottom: 33px;
+	}
+
+	.bForm {
+		max-height: 200px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+	}
+
+	.bLabel {
+		position: absolute;
+    top: 0;
+    border: 1px solid #cccccc;
+    padding: 5px 40px 5px 15px;
+    border-radius: 4px;
+		cursor:pointer;
+		left: 0;
+	}
+
+	.bLabel:hover.bLabel:after{
+		border-color: #000 transparent transparent transparent;
+	}
+
+	.bLabel:after {
+		content:'';
+		position:absolute;
+		right: 7px;
+    top: 54%;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 8px 6px 0 6px;
+		border-color: #cccccc transparent transparent transparent;
+
+	}
+	
+		.bLabel2 {
+			position:relative;
+    border: 1px solid #cccccc;
+    padding: 5px 40px 5px 15px;
+    border-radius: 4px;
+		cursor:pointer;
+	
+	}
+
+	.bLabel2:hover.bLabel2:after{
+		border-color: #000 transparent transparent transparent;
+	}
+
+	.bLabel2:after {
+		content:'';
+		position:absolute;
+		right: 7px;
+    top: 54%;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 8px 6px 0 6px;
+		border-color: #cccccc transparent transparent transparent;
+
+	}
+	
+	.bCheckbox {
+
+    margin-bottom: 0;
+		margin-top: 0 !important;
+    width: 31%;
+
+	}
+	.bCheckbox2 {
+    margin-bottom: 0;
+		margin-top: 0;
+    width: 100%;
+
+	}
+	.bCheckbox input[type='checkbox'] {
+		top: 4px;
+	}
+
+	.bLabel.showCheckboxes {
+		display:block !important;
+	}
+
+	.hideForm {
+		height: 0;
+	}
+	
+	.titleContainer {
+		display:flex;
+		flex-wrap: wrap;
+		column-gap: 30px;
+	}
+
+</style>
+
+<script>
+
+const divContainer = document.createElement('div')
+divContainer.classList.add('titleContainer')
+
+try {
+    addNewCheckboxItem(
+        '.acadp-custom-fields-search .form-group.col-md-4',
+        'label',
+        '.checkbox'
+    )
+    addNewCheckboxItem(
+        '.acadp-custom-fields-search .form-group.col-md-4:nth-of-type(2)',
+        'label',
+        '.checkbox'
+    )
+	
+	addNewCheckboxItem(
+        '.acadp-custom-fields-search .form-group.col-md-4:nth-of-type(3)',
+        'label',
+        '.checkbox'
+    )
+
+    const mainWrapper = document.querySelector('.acadp-custom-fields-search')
+    mainWrapper.style.position = 'relative'
+    mainWrapper.insertAdjacentElement('afterbegin',divContainer)
+
+    const select = document.querySelector('.form-control.acadp-category-search')
+
+    select.addEventListener('change', () => {
+        divContainer.childNodes.forEach(node => node.remove())
+        divContainer.remove()
+
+        setTimeout( () => {
+
+
+            addNewCheckboxItem(
+                '.acadp-custom-fields-search .form-group.col-md-4',
+                'label',
+                '.checkbox'
+            )
+            addNewCheckboxItem(
+                '.acadp-custom-fields-search .form-group.col-md-4:nth-of-type(2)',
+                'label',
+                '.checkbox'
+            )
+            addNewCheckboxItem(
+                '.acadp-custom-fields-search .form-group.col-md-4:nth-of-type(3)',
+                'label',
+                '.checkbox'
+            )
+            mainWrapper.insertAdjacentElement('afterbegin',divContainer)
+            divContainer.children[0].remove()
+        },1000)
+    })
+
+
+
+} catch(e) {}
+
+function addNewCheckboxItem(formSelector, labelInFormSelector, formCheckboxes) {
+
+    try {
+        const form = document.querySelector(formSelector)
+        const formLabel = form.querySelector(labelInFormSelector)
+        const checkboxes = form.querySelectorAll(formCheckboxes)
+        const clonedLabel = formLabel.cloneNode(true)
+        console.log(1)
+        clonedLabel.classList.add('bLabel2')
+        formLabel.remove()
+        console.log(2)
+
+        divContainer.insertAdjacentElement('beforeend', clonedLabel)
+        console.log(4, divContainer)
+
+        hideCheckboxes()
+
+        function hideCheckboxes() {
+            checkboxes.forEach(c => c.style.display = 'none')
+
+            clonedLabel.addEventListener('click',showCheckboxes)
+            clonedLabel.removeEventListener('click',hideCheckboxes)
+        }
+
+        function showCheckboxes() {
+            checkboxes.forEach(c => c.style.display = 'block')
+
+            clonedLabel.addEventListener('click',hideCheckboxes)
+            clonedLabel.removeEventListener('click',showCheckboxes)
+        }
+    } catch (e) {
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+	// S2
+
+
+
+
+trigger1()
+function trigger1() {
+    try {
+        const formWrapper = document.querySelector('#acadp-custom-fields-listings')
+        formWrapper.classList.add('bFormWrapper')
+
+        const form1 = document.querySelector('#acadp-custom-fields-listings > .form-group')
+        form1.classList.add('bForm')
+
+        const markFormLabel1 = document.querySelector('#acadp-custom-fields-listings .form-group > label')
+        markFormLabel1.classList.add('bLabel')
+
+
+        const checkboxes = form1.querySelectorAll('.form-group .checkbox')
+        checkboxes.forEach(c => {
+            c.classList.add('bCheckbox')
+        })
+
+        markFormLabel1.addEventListener('click', () => {
+            if (!form1.classList.contains('hideForm')) {
+                hideCheckboxes()
+            } else {
+                showCheckboxes()
+            }
+        })
+        hideCheckboxes()
+        function hideCheckboxes() {
+            try {
+                checkboxes.forEach(c => {
+                    c.style.display = 'none'
+                })
+                form1.classList.add('hideForm')
+
+
+            } catch(e) {}
+
+        }
+
+        function showCheckboxes() {
+            try {
+                checkboxes.forEach(c => {
+                    c.style.display = 'block'
+                })
+                form1.classList.remove('hideForm')
+
+
+            } catch(e) {}
+
+        }
+    } catch (e) {}
+}
+try {
+    const select = document.querySelector('select.form-control.acadp-category-listing')
+
+    select.addEventListener('change', () => {
+        setTimeout(() => {
+            trigger1()
+            try {
+                const select2 = document.querySelector('.acadp-child-terms.acadp-child-terms-4 > select')
+                console.log(select2)
+                select2.addEventListener('change', () => {
+                    setTimeout(() => {
+                        console.log(1)
+                        trigger1()
+                    },2000)
+                })
+            } catch (e) {}
+        },2000)
+
+    })
+} catch (e) {}
+</script> 
+
+

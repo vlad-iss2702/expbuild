@@ -1,0 +1,67 @@
+/*--------Стили для подвала сайта------*/
+footer {
+    background: #164CB5;
+    margin-top: 60px;
+}
+.footer-list {
+    @include u-row-flex(0);
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.footer-item {
+    @include size(4);
+    ul {
+        li {
+            margin-bottom: 12px;
+            a {
+                color: #fff;
+                font-size: 13px;
+                opacity: .7;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.footer-title {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.footer-social {
+    ul {
+        display: flex;
+        margin-top: 20px;
+        li {
+            margin-right: 10px;
+            a {
+                opacity: 1;
+                img {
+                    height: 40px;
+                }
+                &:hover {
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}
+.footer-copyright {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        color: #fff;
+        font-size: 13px;
+        opacity: 1;
+        a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}

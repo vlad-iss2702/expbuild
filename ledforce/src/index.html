@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Light show LED Force</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="modal/css/modal-video.min.css">
+    <link href="scroll/css/jquery.fullPage.css" type="text/css" rel="stylesheet">
+    <!-- Favicons-->
+    <!--<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="css/styles-ie9.css">
+      <![endif]-->
+</head>
+
+<body>
+    <!--Подключение сетки cмарт грид, для того чтобы отобразить сетку на экране раскомментируйте-->
+    <!--<div class="degubGrid">
+            <div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>-->
+    <!-- Элементы Вёрстки Шапки сайта -->
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="header__logo">
+                    <img src="img/logo.png" alt="Логотип сайта" />
+                </div>
+                <div class="header__number">
+                    <img src="img/icons/phone.png" alt="Иконка номера телефона" />
+                    <p><a href="tel:+380672170300"> +38 067 2170300</a></p>
+                </div>
+                <div class="header__burger">
+                	<div class="menu_dropdown">
+                    <img src="img/icons/burger.png" alt="Иконка бургер меню" />
+                    <div class="menu_dropdown-sub" id="menu">
+                        <ul>
+                            <li class="dropdown-sub-item"><a href="#yak1">Программы</a></li>
+                            <li class="dropdown-sub-item"><a href="#yak2">Стоимость</a></li>
+                            <li class="dropdown-sub-item"><a href="#yak3">О нас</a></li>
+                            <li class="dropdown-sub-item"><a href="#yak4">Отзывы</a></li>
+                            <li class="dropdown-sub-item"><a href="#yak5">Вопрос ответ</a></li>
+                            <li class="dropdown-sub-item"><a href="#yak6">Контакты</a></li></li>
+                        </ul>
+                    </div>
+                </div>
+                	
+                    <div class="mobile-menu">
+                        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                        <label for="openSidebarMenu" class="sidebarIconToggle">
+                            <div class="mobile__menu_button"><img src="img/icons/burger.png" alt="Иконка бургер меню" /></div>
+                        </label>
+                        <div class="back-menu"></div>
+                        <div id="sidebarMenu">
+                            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                            <label for="openSidebarMenu" class="sidebarIconToggle">
+                                <div class="openSidebarMenu" id="openSidebarMenu">
+                                    <div class="close__button">
+                                		<img src="img/icons/icon-close.png" alt="Иконка закрытия" />
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="mobile__menu" id="menu-mobile">
+                                <ul>
+                                    <li><a href="#yak1">Программы</a></li>
+                                    <li><a href="#yak2">Стоимость</a></li>
+                                    <li><a href="#yak3">О нас</a></li>
+                                    <li><a href="#yak4">Отзывы</a></li>
+                                    <li><a href="#yak5">Вопрос ответ</a></li>
+                                    <li><a href="#yak6">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="mobile__social">
+                                <ul>
+                                    <li><a href="/"><img src="img/icons/instagram.png" alt="Иконка Инстаграмма" /></a></li>
+                                    <li><a href="/"><img src="img/icons/facebook.png" alt="Иконка Инстаграмма" /></a></li>
+                                    <li><a href="/"><img src="img/icons/youtube.png" alt="Иконка Инстаграмма" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Верстка Основной части сайта -->
+    <main id="fullpage">
+        <!-- Первый Блок о световом Шоу -->
+        <div class="show-back">
+            <div class="show">
+                <div class="show__text">
+                    <div class="overlay-background">
+                        <div class="overlay-backlight"></div>
+                        <div class="show__text_top">
+                            <div class="show__text_top-title">
+                                <h1>Незабываемое световое LED ШОУ</h1>
+                            </div>
+                            <p> для ваших мероприятий</p>
+                        </div>
+                        <div class="show__text_bottom" style="background-image:url('/img/number-one-background.svg');" src="">
+                            Шоу программы <strong>№1</strong> в Украине от 8 000 ₴
+                        </div>
+                    </div>
+                </div>
+                <div class="show_icon">
+                    <a href="/"><img src="img/icons/instagram.png" alt="Иконка Инстаграмма" /></a><br />
+                    <a href="/"><img src="img/icons/facebook.png" alt="Иконка Фейсбука" /></a><br />
+                    <a href="/"><img src="img/icons/youtube.png" alt="Иконка Ютуба" /></a>
+                </div>
+            </div>
+            <div class="show-link">
+              <a href="/">получить предложение</a>
+            </div>
+            <div class="show_icon-mobile">
+              <a href="/"><img src="img/icons/instagram.png" alt="Иконка Инстаграмма" /></a><br />
+              <a href="/"><img src="img/icons/facebook.png" alt="Иконка Фейсбука" /></a><br />
+              <a href="/"><img src="img/icons/youtube.png" alt="Иконка Ютуба" /></a>
+            </div>
+        </div>
+        <!-- Второй Блок С видеороликом и модальным окном -->
+        <div class="show-video">
+            <div class="show-video__background">
+                <div class="background-video-fullscreen">
+                    <div class="background-video-overlay">
+                    	<div class="container">
+	                        <h2>ДРАКОНЫ, КОТОРЫЕ ЗАПОМНЯТСЯ НАДОЛГО</h2>
+	                        <a class="video-play js-video-button" data-video-id='y8OvKjkmKBs'>
+	                          <img src="img/icons/play.png" alt="Иконка Запуска видео" />
+	                        </a>
+	                        <p>Танцоры в LED костюмах на джамперах способны<br /> удивить любого! Ваше мероприятие превратится в эксклюзив<br /> с захватывающей иллюминацией.</p>
+                    	</div>
+                    </div>
+                    <video loop="" muted="" autoplay="" poster="img/video/led-force.jpg" class="fullscreen-bg__video">
+                        <source src="img/video/led-force.mp4" type="video/mp4">
+                        <source src="img/video/led-force.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!-- Третий Блок о мероприятиях-->
+        <div class="show-list">
+        	<div class="container">
+	            <div class="show-title">
+	                <h3>Подойдет для любого мероприятия:</h3>
+	            </div>
+	            <div class="show-item">
+	                <div class="show-item__img">
+	                    <img src="img/icons/ball.png" alt="Иконка Шара" /></a>
+	                </div>
+	                <div class="show-item__text">
+	                    Клубные мероприятия
+	                </div>
+	            </div>
+	            <div class="show-item">
+	                <div class="show-item__img">
+	                    <img src="img/icons/speaker.png" alt="Иконка Спикера" /></a>
+	                </div>
+	                <div class="show-item__text">
+	                    Клубные мероприятия
+	                </div>
+	            </div>
+	            <div class="show-item">
+	                <div class="show-item__img">
+	                    <img src="img/icons/calendar.png" alt="Иконка Календаря" /></a>
+	                </div>
+	                <div class="show-item__text">
+	                    Корпоративные мероприятия
+	                </div>
+	            </div>
+	            <div class="show-item">
+	                <div class="show-item__img">
+	                    <img src="img/icons/tag.png" alt="Иконка Тега" /></a>
+	                </div>
+	                <div class="show-item__text">
+	                    Промоакции и презентации
+	                </div>
+	            </div>
+            </div>
+        </div>
+        <div class="show-main-block section" data-anchor="programm">
+            <!-- Четвертый Блок о программах-->
+            <div class="show-programm" id="yak1">
+            	<div class="container">
+	                <div class="programm-title">
+	                    <h3>Выберите программу</h3>
+	                </div>
+	                <div class="programm-text">
+	                    Мы подготовили для вас четыре уникальных предложения. <br />
+	                    Пожалуйста, ознакомьтесь с нашими программами
+	                </div>
+	                <div class="container">
+	                    <div class="programm-list">
+	                        <div class="programm-list__item">
+	                            <div class="programm-list__item_img" style="background-image:url('/img/programm-one.jpg');">
+	                              <!-- Ссылка на модальное окно с видеороликом в атрибуте data-video-id передается часть ссылки на видео с yutube-->
+	                              <a class="video-play js-video-button" data-video-id='cATGEyMX8VQ'>
+	                                <img src="img/icons/play.png" alt="Иконка Запуска видео" />
+	                              </a>
+	                            </div>
+	                            <div class="programm-list__item_title">Шоу Драконы-Джамперы</div>
+	                            <div class="programm-list__item_link">
+	                            	<a class="modal-trigger" data-modal-id="modal-1">подробнее</a>
+	                            </div>
+	                        </div>
+	                        <div class="programm-list__item">
+	                            <div class="programm-list__item_img" style="background-image:url('/img/programm-two.jpg');">
+	                              <a class="video-play js-video-button" data-video-id='HU36SttZlMc'>
+	                                <img src="img/icons/play.png" alt="Иконка Запуска видео" />
+	                              </a>
+	                            </div>
+	                            <div class="programm-list__item_title">Шоу Роботы</div>
+	                            <div class="programm-list__item_link">
+	                            	<a class="modal-trigger" data-modal-id="modal-2">подробнее</a>
+	                            </div>
+	                        </div>
+	                        <div class="programm-list__item">
+	                            <div class="programm-list__item_img" style="background-image:url('/img/programm-three.jpg');">
+	                              <a class="video-play js-video-button" data-video-id='ZNYkERwWBM'>
+	                                <img src="img/icons/play.png" alt="Иконка Запуска видео" />
+	                              </a>
+	                            </div>
+	                            <div class="programm-list__item_title">Конфетти и Бумажное Шоу</div>
+	                            <div class="programm-list__item_link">
+	                            	<a class="modal-trigger" data-modal-id="modal-3">подробнее</a>
+	                            </div>
+	                        </div>
+	                        <div class="programm-list__item">
+	                            <div class="programm-list__item_img" style="background-image:url('/img/programm-for.jpg');">
+	                              <a class="video-play js-video-button" data-video-id='BBuNJmzScno'>
+	                                <img src="img/icons/play.png" alt="Иконка Запуска видео" />
+	                              </a>
+	                            </div>
+	                            <div class="programm-list__item_title">DJ's Шоу</div>
+	                            <div class="programm-list__item_link">
+	                            	<a class="modal-trigger" data-modal-id="modal-4">подробнее</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+                </div>
+            </div>
+            <!-- Пятый Блок о нас-->
+            <div class="show-more">
+                <div class="container">
+                    <div class="more-block">
+                        <div class="more-block__left"></div>
+                        <div class="more-block__right">
+                            <div class="more-block__right_title">
+                                <h3>Мы можем больше</h3>
+                            </div>
+                            <div class="more-block__right_text">
+                                <p>Мы знаем, как выжать из Вашего мероприятия максимум!</p>
+                                <p>У нас всегда есть несколько нестандартных решений, как интегрировать танцоров в мероприятие так, чтобы заставить публику говорить о Вас в инстаграм</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Шестой Блок о партнерах-->
+            <div class="show-reliable" id="yak3">
+                <div class="container">
+                    <div class="reliable__block">
+                        <div class="reliable__block_title">
+                            <h3>LED Force - надежный партнер</h3>
+                        </div>
+                        <div class="reliable__block_list">
+                            <div class="reliable__block_item">
+                                <img src="img/icons/high-five.png" alt="Иконка Запуска видео" />
+                                <p>5 лет успешной работы на международном рынке</p>
+                            </div>
+                            <div class="reliable__block_item">
+                                <img src="img/icons/badge.png" alt="Иконка Запуска видео" />
+                                <p>Провели более200 мероприятий</p>
+                            </div>
+                            <div class="reliable__block_item">
+                                <img src="img/icons/community.png" alt="Иконка Запуска видео" />
+                                <p>Нашу программу уже увидели 20 000человек</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Седьмой Блок о Производстве-->
+            <div class="show-production">
+            	<div class="container">
+	                <div class="show-production__title">
+	                    <h3>Собственное производство</h3>
+	                </div>
+	                <div class="show-production__text">
+	                    <p>Наши инженеры разработали и собрали уникальное LED оборудование на базе собственной лаборатории "Walhalla Tech".</p>
+	                </div>
+	                <div class="show-production__list">
+	                    <ul>
+	                        <li>7 лет успешной работы</li>
+	                        <li>Современные технологии</li>
+	                        <li>Высококвалифицированные профессионалы</li>
+	                        <li>Реализация 4-го поколения LED костюмов</li>
+	                    </ul>
+	                </div>
+                </div>
+            </div>
+            <!-- седьмой Блок связи-->
+            <div class="show-form">
+            	<div class="container">
+	                <div class="show-form__title">
+	                    <h3>Проведите ваше событие ярко!</h3>
+	                </div>
+	                <div class="show-form__block">
+	                    <p>Оставьте свои данные и мы свяжемся с вами в ближайшее время</p>
+	                    <form>
+	                        <input placeholder="Ваше имя">
+	                        <input placeholder="Номер телефона">
+	                        <input placeholder="Ваш E-mail">
+	                        <button type="submit">получить предложение</button>
+	                    </form>
+	                </div>
+                </div>
+            </div>
+            <!-- Восьмой Блок о стоимости-->
+            <div class="show-events" id="yak2">
+            	<div class="container">
+	                <div class="show-events__title">
+	                    <h3>Стоимость мероприятия от 8 000 ₴</h3>
+	                </div>
+	                <div class="show-events__list">
+	                    <ul>
+	                        <li>Удобные даты: гибкий выбор времени проведения</li>
+	                        <li>Модульное построение программы</li>
+	                        <li>Прозрачное ценообразование</li>
+	                        <li>Увеличенное время: длительность выступления составляет до 90 минут</li>
+	                    </ul>
+	                </div>
+                </div>
+            </div>
+            <!-- Девятый Блок отзывы-->
+            <div class="show-reviews" id="yak4">
+            	<div class="container">
+	                <div class="show-reviews__title">
+	                    <h3>Посмоторите на отзывы наших клиентов</h3>
+	                </div>
+	                <div class="show-reviews__item">
+	                    <div class="show-reviews__item_img">
+	                        <img src="img/intersect-4.png" />
+	                    </div>
+	                    <div class="show-reviews__item_info">
+	                        <h4>Виктория</h4>
+	                        <p>Хочу выразить огромную благодарность команде Led Force. Это было мощно, наши гости в восторге! Обязательно обратимся к вам вновь!</p>
+	                    </div>
+	                </div>
+	                <div class="show-reviews__item">
+	                    <div class="show-reviews__item_img">
+	                        <img src="img/intersect-5.png" />
+	                    </div>
+	                    <div class="show-reviews__item_info">
+	                        <h4>Юрий</h4>
+	                        <p>Заказываю шоу не в первый раз! Это выглядит круто и эффектно! Отдельное спасибо за профессионализм и качественную организацию</p>
+	                    </div>
+	                </div>
+	                <div class="show-reviews__item">
+	                    <div class="show-reviews__item_img">
+	                        <img src="img/intersect-6.png" />
+	                    </div>
+	                    <div class="show-reviews__item_info">
+	                        <h4>Богдан</h4>
+	                        <p>Смотреть на световое шоу - это отдельное удовольствие. Гости в восторге и атмосфера - улет! Что еще нужно для удачного праздника. Вы лучшие, спасибо!</p>
+	                    </div>
+	                </div>
+                </div>
+            </div>
+            <!-- Десятый вопросы-->
+            <div class="show-accordeon" id="yak5">
+                <div class="container">
+                    <div class="show-accordeon__title">
+                        <h3>Нас часто спрашивают</h3>
+                    </div>
+                    <div class="show-accordeon__list">
+                        <div class="tab">
+                            <input id="tab-1" type="checkbox" name="tabs">
+                            <label for="tab-1">Нужна сцена для выступления артистов?</label>
+                            <div class="tab-content">
+                                <p>Не обязательно. Для достижения максимального эффекта от выступления рекомендуем выделить отдельную площадку. Артисты также могут находится в центре публики</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input id="tab-2" type="checkbox" name="tabs">
+                            <label for="tab-2">Какое оборудование необходимо для работы?</label>
+                            <div class="tab-content">
+                                <p>Все необходимое оборудование мы предоставляем самостоятельно! В шоу с использованием конфетти пушек потребуется наличия розеток 220 В</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input id="tab-three" type="checkbox" name="tabs">
+                            <label for="tab-three">Вы работаете под свое музыкальное сопровождение?</label>
+                            <div class="tab-content">
+                                <p>PJ-поддержка осуществляется под музыку заказчика. При демонстрации готового номера мы используем свою музыку</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input id="tab-4" type="checkbox" name="tabs">
+                            <label for="tab-4">Сколько времени длится выступление?</label>
+                            <div class="tab-content">
+                                <p>Стандартное время выступления - 60 минут. При необходимости, мы можем увеличить продолжительность программы</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input id="tab-5" type="checkbox" name="tabs">
+                            <label for="tab-5">Можно ли изменить стандартную программу?</label>
+                            <div class="tab-content">
+                                <p>Да, можно. Мы предусматриваем слоты для взаимодействия артистов с другими участниками программы. На консультации мы обсудим план выступления</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input id="tab-6" type="checkbox" name="tabs">
+                            <label for="tab-6">Нужно ли артистам помещение для подготовки?</label>
+                            <div class="tab-content">
+                                <p>Да, его мы согласуем с вами</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input id="tab-7" type="checkbox" name="tabs">
+                            <label for="tab-7">Возможно ли оплата по безналичному рассчету?</label>
+                            <div class="tab-content">
+                                <p>Да, мы принимаем оплату по безналичному рассчету. Мы заключим договор и предоставим вам все необходимые документы и акты</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-presentation__img" style="background-image:url('/img/background-download.jpg');">
+                        <div class="presentation__img_title">
+                            Скачать презентацию в PDF
+                        </div>
+                        <div class="presentation__img_link">
+                            <a href="/">скачать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Одинадцаттый Блок заявки-->
+            <div class="show-quest" id="yak6">
+            	<div class="container">
+	                <div class="show-quest__title">
+	                    <h3>Остались вопросы?</h3>
+	                </div>
+	                <div class="show-quest__posttitle">
+	                    <p>Оставьте заявку и мы перезвоним вам в ближайшее время</p>
+	                </div>
+	                <div class="show-quest__form">
+	                    <div class="show-quest__form_left">
+	                        <a href="/"><img src="img/icons/instagram.png" alt="Иконка Инстаграмма" /></a><br />
+	                        <a href="/"><img src="img/icons/facebook.png" alt="Иконка Фейсбука" /></a><br />
+	                        <a href="/"><img src="img/icons/youtube.png" alt="Иконка Ютуба" /></a>
+	                    </div>
+	                    <div class="show-quest__form_right">
+	                        <form>
+	                            <input placeholder="Ваше имя">
+	                            <input placeholder="Ваш E-mail">
+	                            <input placeholder="Номер телефона">
+	                            <button type="submit">Перезвоните мне</button>
+	                        </form>
+	                    </div>
+	                </div>
+                </div>
+            </div>
+    </main>
+    <!--Модальные окна-->
+    <div class="container">
+         <!--Модальное окно под id modal-1-->
+	    <div id="modal-1" class="modal" data-modal-effect="fadescale">
+		  <div class="modal-content">
+			    <a href="#" class="btn btn-primary btn-medium modal-close"><img src="img/icons/icon-close.png" alt="Иконка закрытия" /></a>
+			    <div class="modal-list">
+			    	<div class="modal-list-slider">
+			    		<div class="owl-carousel owl-theme modal-img-carousel">
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-1-1.jpg);"></div>
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-1-2.jpg);"></div>
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-1-3.jpg);"></div>
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-1-4.jpg);"></div>
+	                    </div>
+			    	</div>
+			    	<div class="modal-list-info">
+			    		<div class="modal-list-info_title">Шоу роботы</div>
+			    		<div class="modal-list-info_price">от 6 000₴</div>
+			    		<div class="modal-list-info_link">
+			    			<a href="#yak5" class="modal-close">заказать</a>
+			    		</div>
+			    		<div class="modal-list-info_text">
+			    			<p>Эффектное фристайл выступление артистов в LED костюмах роботов со спецэффектами. Шоу наполнит гостей энергией и яркими эмоциями</p>
+			    			<p>Программа подойдет для встречи и сопровождения гостей на различных мероприятиях, разогрева публики, выступления с хедлайнером и штатными артистами.</p>
+			    		</div>
+			    		<div class="modal-list-info_list">
+			    			<ul>
+			    				<li>- 2 артиста</li>
+			    				<li>- LED инженер</li>
+			    				<li>- LED костюмы</li>
+			    				<li>- техническое сопровождение</li>
+			    				<li>- 3 сета по 15 минут</li>
+			    			</ul>
+			    		</div>
+			    	</div>
+		   		</div>
+	  		</div>
+		</div>
+	    <div id="modal-2" class="modal" data-modal-effect="fadescale">
+		  <div class="modal-content">
+			    <a href="#" class="btn btn-primary btn-medium modal-close"><img src="img/icons/icon-close.png" alt="Иконка закрытия" /></a>
+			    <div class="modal-list">
+			    	<div class="modal-list-slider">
+			    		<div class="owl-carousel owl-theme modal-img-carousel">
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-2-1.jpg);"></div>
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-2-2.jpg);"></div>
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-2-3.jpg);"></div>
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-2-4.jpg);"></div>
+	                    </div>
+			    	</div>
+			    	<div class="modal-list-info">
+			    		<div class="modal-list-info_title">Шоу Драконы-Джамперы</div>
+			    		<div class="modal-list-info_price">от 9 000₴</div>
+			    		<div class="modal-list-info_link">
+			    			<a href="#yak5" class="modal-close">заказать</a>
+			    		</div>
+			    		<div class="modal-list-info_text">
+			    			<p>Яркое и динамичное фристайл выступление танцоров в LED костюмах драконов с прыжками на джамперах</p>
+			    			<p>Программа подойдет для встречи и сопровождения гостей на различных мероприятиях, разогрева публики, выступления с хедлайнером и штатными артистами</p>
+			    		</div>
+			    		<div class="modal-list-info_list">
+			    			<ul>
+			    				<li>- 2 артиста</li>
+			    				<li>- LED инженер</li>
+			    				<li>- LED костюмы</li>
+			    				<li>- техническое сопровождение</li>
+			    				<li>- 3 сета по 15 минут</li>
+			    			</ul>
+			    		</div>
+			    	</div>
+		   		</div>
+	  		</div>
+		</div>
+		<div id="modal-3" class="modal" data-modal-effect="fadescale">
+		  <div class="modal-content">
+			    <a href="#" class="btn btn-primary btn-medium modal-close"><img src="img/icons/icon-close.png" alt="Иконка закрытия" /></a>
+			    <div class="modal-list">
+			    	<div class="modal-list-slider">
+			    		<div class="owl-carousel owl-theme modal-img-carousel">
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-3-1.jpg);"></div>
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-3-2.jpg);"></div>
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-3-3.jpg);"></div>
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-3-4.jpg);"></div>
+	                    </div>
+			    	</div>
+			    	<div class="modal-list-info">
+			    		<div class="modal-list-info_title">Конфетти и Бумажное Шоу</div>
+			    		<div class="modal-list-info_price">от 6 000₴</div>
+			    		<div class="modal-list-info_link">
+			    			<a href="#yak5" class="modal-close">заказать</a>
+			    		</div>
+			    		<div class="modal-list-info_text">
+			    			<p>Мы разработали безопасные конфетти пушки, чтобы ваше мероприятие стало ярче! Танцоры в LED костюмах и густые облака блесток... Гости будут в восторге</p>
+			    			<p>Программа подойдет для встречи и сопровождения гостей на различных мероприятиях, разогрева публики, выступления с хедлайнером и штатными артистами</p>
+			    		</div>
+			    		<div class="modal-list-info_list">
+			    			<ul>
+			    				<li>- 2 артиста</li>
+			    				<li>- LED инженер</li>
+			    				<li>- LED костюмы</li>
+			    				<li>- 2 конфетти пушки</li>
+			    				<li>- техническое сопровождение</li>
+			    				<li>- 3 сета по 15 минут</li>
+			    			</ul>
+			    		</div>
+			    	</div>
+		   		</div>
+	  		</div>
+		</div>
+		<div id="modal-4" class="modal" data-modal-effect="fadescale">
+		  <div class="modal-content">
+			    <a href="#" class="btn btn-primary btn-medium modal-close"><img src="img/icons/icon-close.png" alt="Иконка закрытия" /></a>
+			    <div class="modal-list">
+			    	<div class="modal-list-slider">
+			    		<div class="owl-carousel owl-theme modal-img-carousel">
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-4-1.jpg);"></div>
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-4-2.jpg);"></div>
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-4-3.jpg);"></div>
+	                        <div class="modal-img-item" style="background:url(img/slider/slider-4-4.jpg);"></div>
+	                    </div>
+			    	</div>
+			    	<div class="modal-list-info">
+			    		<div class="modal-list-info_title">DJ's Шоу</div>
+			    		<div class="modal-list-info_price">от 5 000₴</div>
+			    		<div class="modal-list-info_link">
+			    			<a href="#yak5" class="modal-close">заказать</a>
+			    		</div>
+			    		<div class="modal-list-info_text">
+			    			<p>DJ в LED костюме произведет ВАУ эффект на гостей! Динамичная музыка и яркий светодиоды создадут незабываемую атмосферу на вашем мероприятии</p>
+			    			<p>Программа подойдет для любого формата меропривстречи и сопровождения гостей на различных мероприятиях, разогрева публики, выступления с хедлайнером и штатными артистами</p>
+			    			<p>* Музыкальная аппаратура предоставляется заказчиком</p>
+			    		</div>
+			    		<div class="modal-list-info_list">
+			    			<ul>
+			    				<li>- артист DJ</li>
+			    				<li>- LED инженер</li>
+			    				<li>- LED костюмы</li>
+			    				<li>- техническое сопровождение</li>
+			    				<li>- до 2-х часов работы</li>
+			    			</ul>
+			    		</div>
+			    	</div>
+		   		</div>
+	  		</div>
+		</div>
+	</div>
+    <footer>
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer__block_item">
+                    <div class="footer__block_item-logo">
+                        <img src="img/logo.png" alt="Логотип сайта">
+                    </div>
+                    <div class="footer__block_item-city">
+                        <p>Украина, г. Киев</p>
+                    </div>
+                </div>
+                <div class="footer__block_item">
+                    <div class="footer__block_item-icons">
+                        <div class="footer__block_item-icon">
+                            <a href="/"><img src="img/icons/instagram.png" alt="Иконка Инстаграмма" /></a>
+                        </div>
+                        <div class="footer__block_item-icon">
+                            <a href="/"><img src="img/icons/facebook.png" alt="Иконка Фейсбука" /></a>
+                        </div>
+                        <div class="footer__block_item-icon">
+                            <a href="/"><img src="img/icons/youtube.png" alt="Иконка Ютуба" /></a>
+                        </div>
+                    </div>
+                    <div class="footer__block_item-text">
+                        <p>© «‎LED FORCE» 2015-2020</p>
+                    </div>
+                </div>
+                <div class="footer__block_item">
+                    <div class="footer__block_item-contact">
+                        <a href="/">
+                            <img src="img/icons/phone.png" alt="Иконка номера телефона">
+                            +38 067 2170300
+                        </a><br />
+                        <a href="/">
+                            @ leddforce@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script src="modal/js/jquery-modal-video.min.js"></script>
+    <script src="scroll/js/jquery.easings.min.js"></script>
+    <script src="scroll/js/scrolloverflow.min.js"></script>
+    <script src="scroll/js/jquery.fullPage.min.js"></script>
+    <script src="js/script.js"></script>
+   
+</html>

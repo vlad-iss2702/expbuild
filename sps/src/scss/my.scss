@@ -1,0 +1,36 @@
+/*---------MY--------*/
+
+body {
+	font-family: "TTNorms-Regular";
+}
+.container {
+	@include wrapper();
+}
+.container-mini {
+	max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+a, button {
+	transition: 0.3s;
+}
+img {
+	max-width: 100%;
+}
+p {
+	font-size: 14px;
+	color: #171718;
+	line-height: 20px;
+}
+
+/*-------------------------*/
+
+@import 'blocks/header';
+
+@import 'blocks/main';
+
+@import 'lib/blueimp';
+
+
+@import 'blocks/footer';

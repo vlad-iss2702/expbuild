@@ -1,0 +1,1015 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon/icomoon.eot?6df70o');
+    src:  url('../fonts/icomoon/icomoon.eot?6df70o#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon/icomoon.ttf?6df70o') format('truetype'),
+      url('../fonts/icomoon/icomoon.woff?6df70o') format('woff'),
+      url('../fonts/icomoon/icomoon.svg?6df70o#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-chevron-thin-right:before {
+    content: "\e902";
+  }
+  .icon-chevron-small-right:before {
+    content: "\e904";
+  }
+  .icon-chevron-thin-left:before {
+    content: "\e901";
+  }
+  .icon-chevron-small-left:before {
+    content: "\e905";
+  }
+  .icon-user:before {
+    content: "\e900";
+  }
+  .icon-chevron-down:before {
+    content: "\e903";
+  }
+
+  
+
+body {    
+    width: 100%;
+    font-family: 'Proxima Nova Rg';
+    background: #000002;
+}
+
+.container {
+    max-width: 1530px;
+    padding: 0;
+}
+a {
+    transition: 0.3s;
+    text-decoration: none;
+}
+button {
+    transition: 0.5s;
+}
+a:hover {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+p {
+    margin-bottom: 0;
+}
+/*---------Header-------*/
+.headerTop {
+    height: 54px;
+    border-bottom: 1px solid #8C8E8F;
+    background: #000002;
+    z-index: 2;
+    position: relative;
+}
+.headerTopBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+}
+.headerTopMap a img {
+    height: 25px;
+    margin-right: 7px;
+    width: auto;
+}
+.headerTopMap a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    font-family: 'Futura-Book', sans-serif;
+    margin-top: 2px;
+}
+.headerTopTitle p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 1px;
+}
+.headerTopPhone a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FE5000;
+}
+.headerTopMap {
+    width: 20%;
+}
+.headerTopTitle {
+    width: 56.5%;
+}
+.headerTopPhone {
+    margin-top: 6px;
+}
+.headerBottomBlock {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    align-items: center;
+}
+.headerBottomLogo {
+    margin-right: 29px;
+    position: relative;
+}
+.headerBottomLogo:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background: #D9D9D9;
+    right: -14px;
+    top: 25%;
+}
+.headerBottomBurger {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-left: -30px;
+    margin-right: 12px;
+}
+.headerBottomBurger img {
+    margin-right: 10px;
+}
+.headerBottomSearch form {
+    display: flex;
+    align-items: center;
+}
+.headerBottomSearch form input {    
+    background: none;
+    height: 36px;
+    padding: 0px 0px 0px 15px;
+    border-radius: 5px;
+    width: 747px;
+    border: 1px solid #fff;
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #F4F4F4;
+    font-family: 'Futura-Book', sans-serif;
+    outline: none;
+}
+.headerBottomSearch form input::placeholder {
+    color: #F4F4F4;
+}
+.headerBottomSearch form button {
+    background: #FE5000;
+    width: 41px;
+    height: 36px;    
+    border: 1px solid #FE5000;
+    border-radius: 5px;
+}
+.headerBottomLogin {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;    
+}
+.headerBottomLogin p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.headerBottomLogin p:last-child {
+    margin-left: 17px;
+    position: relative;
+}
+.headerBottomLogin p:last-child:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background: #D9D9D9;
+    left: -9px;
+    top: 10%;
+}
+.headerBottomLogin img {
+    margin-right: 8px;
+}
+.headerBottomDelivery {
+    position: relative;
+    margin-left: 7px;
+}
+.headerDeliveryCount {
+    position: absolute;
+    top: -12px;
+}
+.headerDeliveryCount p {
+    position: absolute;
+    top: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000002;
+    left: 6px;
+}
+/*-----------Main------------------*/
+/*Banner*/
+.mainBanner {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 1002px;
+    margin-top: -110px;
+}
+.mainBannerSlider {
+    position: relative;
+}
+.mainBannerBlock {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 260px;
+}
+.mainBannerSlider.owl-carousel.owl-loaded.owl-drag {
+    width: 65%;    
+}
+.mainBannerSlider h3 {
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 1.3px;
+    margin-bottom: 0;
+}
+.mainBannerSlider h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.mainBannerSliderItem img {
+    margin-top: 64px;
+}
+.mainBannerSlider .owl-dots button {    
+    outline: none;
+    margin-right: 10px;
+}
+.mainBannerSlider .owl-dots span {    
+    border: 1px solid #ECECEC !important;
+    width: 16px !important;
+    height: 16px !important;
+    display: block;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.mainBannerSlider  button.owl-dot.active span {
+    background: #ECECEC !important;
+    border-radius: 50%;
+}
+.mainBannerSlider  button.owl-dot:hover span {
+    background: #ECECEC !important;
+    border-radius: 50%;
+}
+.mainBannerSlider .owl-dots {
+    position: absolute;
+    top: -56px;
+}
+.mainBannerScroll {
+    position: relative;
+    bottom: 72px;
+    left: 49.2%;
+    display: flex;
+    width: 30px;
+}
+.mainBannerList {
+    margin-top: -55px;
+}
+.mainBannerItem {
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    padding: 13px 20px 20px 20px;
+    width: 360px;
+    margin-bottom: 10px;
+    height: 151px;
+}
+.mainBannerDate {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: #8C8E8F;
+}
+.mainBannerDate {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: #8C8E8F;
+    font-family: 'Futura-Book', sans-serif;
+    margin-bottom: 8px;
+}
+.mainBannerTitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    height: 50px;
+    overflow: hidden;
+}
+.mainBannerLink {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    font-family: 'Futura-Book', sans-serif;
+}
+.mainBannerAll a {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    background: #FFD815;
+    border-radius: 10px;
+    height: 59px;
+    font-family: 'Futura-Book', sans-serif;
+    color: #000002;
+    font-size: 17px;
+}
+.mainBannerAll {
+    margin-top: 22px;
+}
+
+/*----------Main-Catalog--------*/
+.mainCatalogTitle {
+    margin-top: 120px;
+    margin-bottom: 53px;
+}
+.titleBlock {
+    display: flex;
+    align-items: center;
+}
+.mainCatalogTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.catalogSlider .owl-carousel .item {
+    height: 10rem;
+    background: #4DC7A0;
+    padding: 1rem;
+}
+/*---------------catalogblock---------------*/
+.mainCatalog {
+    padding-bottom: 42px;
+}
+.titleBlock h2 {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 68px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.titleBlock img {
+    margin-right: 15px;
+}
+.titleBlock img {
+    margin-right: 15px;
+    margin-top: -5px;
+}
+.allBlock a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;    
+    color: #FFFFFF;
+    font-family: 'Futura-Book', sans-serif;
+    margin-top: 10px;
+    display: block;
+    letter-spacing: 0.3px;
+}
+.catalogcounter {
+    color: #8C8E8F;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    position: relative;
+    top: -436px;
+}
+.catalogcounter span {
+    color: #FE5000;
+    display: inline-block;
+    margin-right: 5px;
+}
+.catalogList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1140px;
+}
+.catalogItem {
+    width: 33.3%;
+    height: 192px;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catalogSliderItem {
+    display: flex;
+    justify-content: flex-end;
+}
+.catalogSlider .owl-nav  button {
+    outline: none;
+}
+.catalogSlider .owl-nav .owl-prev img {
+    transform: rotate(180deg);    
+}
+.catalogSlider .owl-nav {
+    position: relative;
+    bottom: 29px;
+}
+.catalogSlider .owl-next {
+    position: relative;
+    left: 137px;
+}
+.catalogSlider .owl-next:before {
+    position: absolute;
+    content: url(../images/icon/lineWhiteIcon.png);
+    top: -0.5px;
+    left: -54px;
+}
+.catalogSlider .owl-prev:before {
+    position: absolute;
+    content: url(../images/icon/lineWhiteIcon.png);
+    top: -0.5px;
+    left: 46px;
+}
+.catalogSlider .disabled:before {
+    opacity: 0 !important;
+}
+.catalogSlider .disabled img {
+    opacity: 0.5 !important;
+}
+/*-----------products-catalog----------*/
+.mainCatalogProducts {
+    background: #fff;
+    padding-bottom: 102px;
+}
+.productsTitle {
+    margin: 0 0;
+    padding-top: 120px;
+}
+.productsTitle h2 {
+   color: #000002;
+}
+.productsTitle a {
+    color: #000002;
+ }
+ .catalogProductsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 52px;
+}
+.catalogProductsItem {
+    width: 19%;
+    border: 1px solid #000002;
+    border-radius: 16px;
+    height: 141px;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 14px 20px 19px 20px;
+}
+.catalogProductsItem h3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000002;
+}
+.catalogProductsItem img {
+    position: absolute;
+    right: 19px;
+    bottom: 14px;
+}
+/*--------------footer----------------*/
+footer {
+    background: #000002;
+    padding: 30px 0;
+}
+.footerLogo {
+    width: 34%;
+}
+.footerLogo img {
+    width: 390px;
+    margin-bottom: 93px;
+}
+.footerCopyright p {
+    font-family: 'Futura-Book', sans-serif;
+    color: #F4F4F4;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.6px;
+}
+.footerCopyright p a {
+    color: #8C8E8F;
+}
+.footerBlock {
+    display: flex;
+    justify-content: space-between;
+}
+.footerMenu {
+    margin-top: -2px;
+}
+.footerMenu p {
+    font-family: 'Futura-Book', sans-serif;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footerMenu ul li {
+    margin-bottom: 4px;
+}
+.footerMenu ul li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Futura-Book', sans-serif;
+    color: #8C8E8F;
+}
+.footerMenuList {
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+}
+.footerMenuList .footerMenu:nth-child(2) {
+    margin-left: 7px;
+    margin-right: 11px;
+}
+.footerContacts p {
+    font-family: 'Futura-Book', sans-serif;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footerLink a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FE5000;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.footerContacts {
+    margin-right: -1px;
+    margin-top: -2px;
+}
+.footerPolicy a {
+    font-family: 'Futura-Book', sans-serif;
+    color: #8C8E8F;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.6px;
+}
+.footerLink {
+    margin-bottom: 55px;
+}
+
+@media screen and (max-width: 1367px) {
+    .container {
+        max-width: 1336px;        
+    }
+    .headerTopTitle {
+        width: 47.5%;
+    }
+    .headerBottomSearch form input {
+        background: none;
+        height: 36px;
+        padding: 0px 0px 0px 15px;
+        border-radius: 5px;
+        width: 554px;
+    }
+    .mainBannerBlock {
+        padding-top: 211px;
+    }
+    .mainBannerSlider h3 {
+        font-size: 71px;
+        margin-bottom: -14px;
+    }
+    .mainBannerSlider .owl-dots {        
+        top: -41px;
+    }
+    .mainBannerSlider h4 {
+        font-size: 38px;
+    }
+    .mainBannerSliderItem img {
+        margin-top: 20px;
+        height: 382px;
+    }
+    .mainBannerItem {
+        width: 425px;
+        height: 114px;
+        padding: 14px 20px 20px 16px;
+    }
+    .mainBannerList {
+        margin-top: -45px;
+    }
+    .mainBannerDate {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    .mainBannerTitle {
+        margin-bottom: 16px;
+        height: 20px;
+    }
+    .mainBannerLink {
+        font-size: 16px;
+    }
+    .mainBannerAll a {
+        height: 52px;
+        font-size: 16px;
+    }
+    .mainBannerAll {
+        margin-top: 18px;
+    }
+    .mainBanner {
+        height: 770px;
+    }
+    .mainBannerScroll {        
+        bottom: 104px;
+        z-index: 2;
+    }
+    .titleBlock h2 {        
+        font-size: 50px;
+        letter-spacing: 0.045em;
+    }
+    .mainCatalogTitle {
+        margin-top: 96px;
+        margin-bottom: 39px;
+    }
+    .allBlock a {
+        font-size: 15px;
+        letter-spacing: 0.4px;
+    }
+    .catalogList {
+        width: 993px;
+    }
+    .catalogSlider .owl-next {        
+        left: 104px;
+    }
+    .mainCatalog {
+        padding-bottom: 23px;
+    }
+    .productsTitle {        
+        padding-top: 96px;
+        margin-top: 0px !important;
+    }
+    .catalogProductsList {
+        margin-top: 36px;
+    }
+    .mainCatalogProducts {        
+        padding-bottom: 78px;
+    }
+    .footerLogo img {
+        width: 370px;
+        margin-bottom: 98px;
+    }
+    .footerCopyright p {
+        font-weight: 400;
+        font-size: 11px;
+        letter-spacing: 0.7px;
+    }
+    .footerMenu {
+        margin-top: 0px;
+    }
+    .footerLogo {
+        width: 34.3%;
+    }
+    .footerMenuList .footerMenu:nth-child(2) {
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+    .footerContacts {
+        margin-right: -6px;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 1025px) { 
+    .container {
+        max-width: 994px;        
+    }
+    .headerBottomSearch form input {
+        width: 329px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .headerTopBlock {
+        height: 50px;
+    }
+    .headerTopMap a img {
+        height: 20px;
+        margin-right: 7px;        
+    }
+    .headerTopTitle p {
+        font-size: 16px;
+    }
+    .headerTopMap {
+        width: 31%;
+    }
+    .headerTopPhone {
+        margin-top: 3px;
+    }
+    .headerTopPhone a {
+        font-size: 16px;
+    }
+    .headerBottomLogo img {
+        width: 193px;
+    }
+    .headerBottomBlock {
+        padding-top: 13px;
+    }
+    .headerTopMap a {
+        font-size: 14px;
+    }
+    .headerBottomBurger img {        
+        height: 30px;
+        margin-right: 10px;
+    }
+    .headerTop {
+        height: 50px;
+    }
+    .headerBottomLogo {
+        margin-right: 40px;
+    }
+    .headerBottomLogo:before {
+        right: -16px;
+        top: 22%;
+    }
+    .headerBottomBurger {
+        font-size: 15px;
+        margin-left: -29px;
+        margin-right: 18px;
+    }
+    .headerBottomSearch form button {
+        width: 35px;
+        height: 30px;
+    }
+    .mainBannerBlock {        
+        flex-direction: column;
+    }
+    .mainBannerSlider.owl-carousel.owl-loaded.owl-drag {
+        width: 100%;
+    }
+    .headerBottomLogin img {        
+        height: 30px;
+    }
+    .headerBottomDelivery img {
+        height: 29px;
+    }
+    .headerDeliveryCount {
+        position: absolute;
+        top: -20px;
+    }
+    .headerDeliveryCount img {
+        height: 17px;
+    }
+    .headerDeliveryCount {
+        position: absolute;
+        top: -12px;
+    }
+    .headerDeliveryCount p {        
+        top: 6px;       
+        font-size: 10px;       
+        left: 4px;
+    }
+    .headerBottomLogin p {
+        font-size: 15px;
+    }
+    .mainBannerBlock {
+        padding-top: 256px;
+    }
+    .mainBannerSlider h3 {
+        font-size: 86px;
+        margin-bottom: -3px;
+    }
+    .mainBannerSlider .owl-dots {
+        top: -49px;
+    }
+    .mainBannerSlider h4 {
+        font-size: 46px;
+    }
+    .mainBannerSliderItem img {
+        margin-top: 29px;
+        height: 479px;
+    }
+    .mainBanner {
+        height: 1385px;
+    }
+    .mainBannerScroll {        
+        left: 49%;
+        bottom: -78px;
+    }
+    .mainBannerList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    .mainBannerItem {
+        width: 24.3%;
+        height: 129px;      
+    }
+    .mainBannerAll {
+        margin-top: 11px;
+        width: 100%;
+    }
+    .mainBannerTitle {
+        margin-bottom: 7px;
+        height: 48px;
+        font-size: 18px;
+    }
+    .mainCatalogTitle {
+        margin-top: 69px;
+        margin-bottom: 71px;
+    }
+    .titleBlock img {
+        height: 26px;
+        width: auto;
+    }
+    .titleBlock h2 {
+        font-size: 42px;
+        letter-spacing: 0;
+    }
+    .allBlock a {
+        font-size: 15px;
+        letter-spacing: 0.4px;
+    }
+    .catalogcounter {
+        top: -456px;
+    }
+    .catalogSlider .owl-nav {
+        position: absolute;
+        top: -48px;
+        right: 102px;
+    }
+    .catalogSlider .owl-nav button {
+        outline: none;
+        right: -11px;
+        position: relative;
+    }
+    .catalogSlider .owl-next:before {
+        top: -0.9px;
+        left: -54px;
+    }
+    .catalogSlider .owl-prev:before {
+        top: -0.9px;
+        left: 45px;
+    }
+    .mainCatalog {
+        padding-bottom: 31px;
+    }
+    .productsTitle {
+        padding-top: 71px;
+        margin-bottom: 12px;
+    }
+    .titleBlock img {
+        margin-right: 11px;        
+    }
+    .allBlock a {
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        margin-right: 20px;
+    }
+    .catalogProductsList {
+        margin-top: 22px;
+    }
+    .catalogProductsItem {
+        margin-bottom: 10px;
+        padding: 10px 16px 19px 16px; 
+        width: 19.2%;
+        height: 116px;   
+    }
+    .catalogProductsItem h3 {
+        font-size: 18px;
+    }
+    .catalogProductsItem img {
+        position: absolute;
+        right: 10px;
+        bottom: 7px;
+    }
+    .footerLogo img {
+        width: 226px;
+        margin-bottom: 98px;
+    }
+    .footerLogo {
+        width: 28.3%;
+    }
+    .footerBlock {        
+        justify-content: flex-start;
+    }
+    .mainCatalogProducts {
+        padding-bottom: 70px;
+    }
+    footer {        
+        padding: 20px 0;
+    }
+    .footerMenu p {        
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+    .footerMenu ul li a {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+    }
+    .footerMenu ul li {
+        margin-bottom: 0px;
+    }
+    .footerMenuList .footerMenu:nth-child(1) {
+        margin-right: 31px;
+    }
+    .footerMenuList .footerMenu:nth-child(2) {        
+        margin-right: 17px;
+    }
+    .footerMenuList .footerMenu:nth-child(3) {        
+        margin-right: 20px;
+    }
+    .footerMenuList {
+        width: 72%;
+        justify-content: flex-start;
+    }
+    .footerContacts p {
+        font-size: 15px;
+        margin-bottom: 9px;
+    }
+    .footerLink a {
+        font-size: 18px;
+    }
+    .footerContacts {
+        margin-right: -10px;
+        margin-top: 0;
+    }
+    .footerLink {
+        margin-bottom: 37px;
+    }
+    .footerPolicy a {
+        font-size: 12px;
+    }
+    .footerLogo img {        
+        margin-bottom: 92px;
+    }
+}

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Invest Shymkent</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="modal/css/modal-video.min.css">
+    <link href="scroll/css/jquery.fullPage.css" type="text/css" rel="stylesheet">
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/favicon-32x32">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/favicon-32x32">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/favicon-32x32">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/favicon-32x32">
+
+    <!-- GOOGLE WEB FONT -->
+    <link rel="stylesheet" href="fonts/pfdintextcomppro/fonts.css">
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="css/styles-ie9.css">
+      <![endif]-->
+</head>
+
+<body>
+    <!--Подключение сетки cмарт грид, для того чтобы отобразить сетку на экране раскомментируйте-->
+    <!--<div class="degubGrid">
+            <div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>-->
+    <!-- Элементы Вёрстки Шапки сайта -->
+    <header>
+        <div class="container">
+            <div class="header__block">
+                <div class="header__block_logo">
+                    <a href=""><img src="img/invest-logo.png" /></a>
+                </div>
+                <div class="header__block_interface">
+                    <div class="header__button header__button--left header__toggle" onclick="App.openFixedMenu()">
+                    	<i class="icon-menu"></i></a>
+                    </div>
+                </div>
+                <div class="header__block_menu">
+                    <ul>
+                        <li><a href="investment.html">Инвестиции</a></li>
+                        <li><a href="about.html">О городе</a></li>
+                        <li><a href="front-ofice.html">Фронт-Офис</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="header__block_right">
+                    <a href="#">RU</a>
+                    <i class="icon-search"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="fixed-menu fixed-menu--active">
+    	<div class="map__menu">
+   			<div class="city-blue__background">
+        		<img src="img/background/city-blue.png" alt="Фон серого города">
+    		</div>
+		   	<div class="container">
+		   		<div class="map__menu_header">
+		   			<div class="map__menu_header-logo">
+		                <a href=""><img src="img/invest-logo.png" /></a>
+		            </div>
+		            <div class="map__menu_header-icons">
+		                <a href="#">RU</a>
+		                <i class="icon-search"></i>
+		                <span class="menu_header-icons-close transition fixed-menu__close" onclick="App.closeFixedMenu()"><i class="icon-close"></i></span>
+		            </div>
+		   		</div>
+		   		<div class="map__menu_main">
+		   			<ul>
+		   				<p>Инвестиции</p>
+		   				<li><a href="#">Инвестиции</a></li>
+		   				<li><a href="#">1000 торговых мест</a></li>
+		   				<li><a href="#">Инвестиционная карта</a></li>
+		   				<li><a href="#">Путеводитель инвестора</a></li>
+		   				<li><a href="#">Приоритетные отрасли</a></li>
+		   				<li><a href="#">Проекты для города</a></li>
+		   				<li><a href="#">Промышленность</a></li>
+		   				<li><a href="#">Франшизы города</a></li>
+		   			</ul>
+		   			<ul>
+		   				<p>О городе</p>
+		   				<li><a href="#">Шымкент Гид</a></li>
+		   				<li><a href="#">О Шымкенте</a></li>
+		   				<li><a href="#">Шымкент в цифрах</a></li>
+		   				<li><a href="#">Шымкент для жизни</a></li>
+		   				<li><a href="#">Интервью</a></li>
+		   				<li><a href="#">Истории успеха</a></li>
+		   				<li><a href="#">События</a></li>
+		   				<li><a href="#">Новости</a></li>
+		   			</ul>
+		   			<ul>
+		   				<p>Фронт-офис</p>
+		   				<li><a href="#">О нас</a></li>
+		   				<li><a href="#">Услуги фронт-офиса</a></li>
+		   				<li><a href="#">Государственная поддержка</a></li>
+		   				<li><a href="#">Земельный участок</a></li>
+		   				<li><a href="#">Налоговы льготы</a></li>
+		   				<li><a href="#">Льготное финансирование</a></li>
+		   				<li><a href="#">Команда</a></li>
+		   				<li><a href="#">Контакты</a></li>
+		   			</ul>
+		   			<ul>
+		   				<p>Контакты</p>
+		   				<li><a href="#">Контакты. Прямая линия</a></li>
+		   			</ul>
+		   		</div>
+		   	</div>
+   		</div>	
+	</div>
+
+    <!-- Верстка Основной части сайта -->
+    <main>
+        <div class="header__background_img">
+            <div class="header__background_overlay"></div>
+            <div class="container">
+                <div class="background__places">
+                    <div class="background__places_item">
+                        <h3>1 место</h3>
+                        <p>По объему промышленного производства на душу населения</p>
+                    </div>
+                    <div class="background__places_item">
+                        <h3>1 место</h3>
+                        <p>По объему промышленного производства на душу населения</p>
+                    </div>
+                    <div class="background__places_item">
+                        <h3>1 место</h3>
+                        <p>По объему промышленного производства на душу населения</p>
+                    </div>
+                </div>
+                <div class="background__statistics">
+                    <div class="background__statistics_item">
+                        <div class="statistics_item-number">
+                            100
+                        </div>
+                        <div class="statistics_item-text">
+                            <h3>
+                                Инвестиционных проектов
+                            </h3>
+                            <p>Уникальная база крупных объектов промышленного строительства</p>
+                        </div>
+                    </div>
+                    <div class="background__statistics_item">
+                        <div class="statistics_item-number">
+                            1000
+                        </div>
+                        <div class="statistics_item-text">
+                            <h3>
+                                Торговых мест
+                            </h3>
+                            <p>Для уличной торговли в городе Шымкент</p>
+                        </div>
+                    </div>
+                    <div class="background__statistics_item">
+                        <div class="statistics_item-number">
+                            7
+                        </div>
+                        <div class="statistics_item-text">
+                            <h3>
+                                Инвестиционных площадок
+                            </h3>
+                            <p>По объему промышленного производства на душу населения</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="title__smallletters">
+                Я хочу:
+            </div> 
+            <div class="block__wantto">
+                <div class="block__wantto_item">
+                    <div class="wantto_item-icon">
+                        <img src="img/icon/bussines-1.png" alt="Иконка Бизнес-1" />
+                    </div>
+                    <div class="wantto_item_text">
+                        <a href="#">узнать про</a>
+                        <h3>1000 торговых мест для торговли</h3>
+                    </div>
+                </div>
+                <div class="block__wantto_item">
+                    <div class="wantto_item-icon">
+                        <img src="img/icon/bussines-2.png" alt="Иконка Бизнес-2" />
+                    </div>
+                    <div class="wantto_item_text">
+                        <a href="#">подобрать</a>
+                        <h3>Государственную поддержку</h3>
+                    </div>
+                </div>
+                <div class="block__wantto_item">
+                    <div class="wantto_item-icon">
+                        <img src="img/icon/location.png" alt="Иконка Локации" />
+                    </div>
+                    <div class="wantto_item_text">
+                        <a href="#">получить</a>
+                        <h3>Земельный участок</h3>
+                    </div>
+                </div>
+                <div class="block__wantto_item">
+                    <div class="wantto_item-icon">
+                        <img src="img/icon/hands.png" alt="Иконка Рукопожатия" />
+                    </div>
+                    <div class="wantto_item_text">
+                        <a href="#">получить</a>
+                        <h3>Сервисную поддержку</h3>
+                    </div>
+                </div>
+                <div class="block__wantto_item">
+                    <div class="wantto_item-icon">
+                        <img src="img/icon/documents.png" alt="Иконка документов" />
+                    </div>
+                    <div class="wantto_item_text">
+                        <a href="#">открыть</a>
+                        <h3>Путеводитель инвестора</h3>
+                    </div>
+                </div>
+                <div class="block__wantto_item">
+                    <div class="wantto_item-icon">
+                        <img src="img/icon/finance.png" alt="Иконка финансирование 1" />
+                    </div>
+                    <div class="wantto_item_text">
+                        <a href="#">получить</a>
+                        <h3>Льготное финансирование</h3>
+                    </div>
+                </div>
+                <div class="block__wantto_item">
+                    <div class="wantto_item-icon">
+                        <img src="img/icon/dollar.png" alt="Иконка финансирование 2" />
+                    </div>
+                    <div class="wantto_item_text">
+                        <a href="#">узнать про</a>
+                        <h3>Налоговые льготы</h3>
+                    </div>
+                </div>
+                <div class="block__wantto_item">
+                    <div class="wantto_item-icon">
+                        <img src="img/icon/info.png" alt="Иконка инфо" />
+                    </div>
+                    <div class="wantto_item_text">
+                        <a href="#">открыть</a>
+                        <h3>Шымкент гид</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="succes-background">
+            <div class="container">
+                <div class="block__succes">
+                    <div class="block__succes_left">
+                        <div class="succes_left-img" style="background-image: url(../img/azimov.png);">
+                            <div class="history-succes">
+                                <div class="succes-icon">
+                                    <img src="img/icon/calendar.png" alt="Иконка Календаря">
+                                </div>
+                                <div class="succes-text">
+                                    <h3>История успеха</h3>
+                                    <p>Есть вещи, которые стоят того, чтобы им хранили верность. Например, кофе</p>
+                                </div>
+                            </div>
+                            <div class="link-succes">
+                                <p>
+                                    <a href="">Подробнее</a>
+                                    <a href="#"><i class="icon-chevron-right1"></i></a>
+                                </p>
+                                <p>Аят Азимов. Global Coffee</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__succes_right">
+                        <div class="succes_right-item">
+                            <div class="succes-right-icon">
+                                <img src="img/icon/clock.png" alt="Иконка часов">
+                            </div>
+                            <div class="succes-right-text">
+                                <h3>Франшизы города шымкент</h3>
+                                <p>Уникальная база крупных объектов промышленного строительства</p>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="succes_right-item">
+                            <div class="succes-right-icon">
+                                <img src="img/icon/ok.png" alt="Иконка согласия">
+                            </div>
+                            <div class="succes-right-text">
+                                <h3>Предложить свой проект</h3>
+                                <p>Уникальная база крупных объектов промышленного строительства</p>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title__uppercase">
+                Свежие новости
+            </div>
+            <div class="block__news">
+                <div class="block__news_item">
+                    <div class="news_item-img" style="background-image: url(img/news1.png); ">
+                        <div class="news_item-text">
+                            <p>05 мая</p>
+                            <a href="#">Бизнес-леди Шымкента призывают к кооперации их проектов</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__news_item">
+                    <div class="news_item-img" style="background-image: url(img/news2.png); ">
+                        <div class="news_item-text">
+                            <p>05 мая</p>
+                            <a href="#">Бизнес-леди Шымкента призывают к кооперации их проектов</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__news_item">
+                    <div class="news_item-img" style="background-image: url(img/news3.png); ">
+                        <div class="news_item-text">
+                            <p>05 мая</p>
+                            <a href="#">Бизнес-леди Шымкента призывают к кооперации их проектов</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block__investments">
+                <div class="block__investments_left">
+                    <h3>Инвестиционная карта</h3>
+                    <p>Наряду с инвестиционным порталом - уникальный проект презентации инвестиционного потенциала города в интернете. С его помощью внутренние и внешние инвесторы  другими заинтересованными лицами могут получить свободный доступ к акутальной информации об инвестиционном, инфраструктурном и русурсном потенциале региона.</p>
+                    <p>Карта представляет поисковые инструменты для самостоятельного подбора объектов для инветиций и земельных участков для размещения производств. Информационные слои знакомят с окружающей инфраструктурой, позволяют оценить расстояние до железных и автомобильных дорог, энергосистем социально-культурных объектов. Начинающие предприниматели получают возможность выбрать подходящие инфраструктурные площадки для своей деятельности и получить необходимую государственную поддержку.</p>
+                    <div class="investments_left-link">
+                        <a href="#">Перейти на карту</a>
+                    </div>
+                </div>
+                <div class="block__investments_right">
+                    <img src="img/map.png" alt="Изображение инвестиционной карты">
+                </div>
+            </div>
+            <div class="block__partners">
+                <div class="owl-carousel owl-theme partners-carousel">
+                    <div class="partners-carousel-item">
+                        <img src="img/slider/partner1.jpg" alt="Слайд 1">
+                    </div>
+                    <div class="partners-carousel-item">
+                        <img src="img/slider/partner2.jpg" alt="Слайд 2">
+                    </div>
+                    <div class="partners-carousel-item">
+                        <img src="img/slider/partner3.jpg" alt="Слайд 3">
+                    </div>
+                    <div class="partners-carousel-item">
+                        <img src="img/slider/partner4.jpg" alt="Слайд 4">
+                    </div>
+                    <div class="partners-carousel-item">
+                        <img src="img/slider/partner5.jpg" alt="Слайд 5">
+                    </div>
+                    <div class="partners-carousel-item">
+                        <img src="img/slider/partner1.jpg" alt="Слайд 6">
+                    </div>
+                    <div class="partners-carousel-item">
+                        <img src="img/slider/partner2.jpg" alt="Слайд 7">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__list">
+                <div class="footer__list_text">
+                    <p>© Государственное учреждение "Управление предпринимательства и индустриально-
+иннавационного развития города Шымкент"</p>
+                    <p>“Invest Shymkent”, 2020</p>
+                </div>
+                <div class="footer__list_contact">
+                    Контакты:
+                    <a href="tel:+77781935853">+7 (778) 193 58 53</a>
+                    <a href="mailto:info@investshymkent.kz">info@investshymkent.kz</a>
+                    <a href="#">Все контакты</a>
+                    <a href="#">Карта сайта</a>
+                    <a href="#">Предложения по улучшению работы инвестиционного портала</a>
+                </div>
+                <div class="footer__list_info">
+                    <a href="#">Скачать информационные материалы о городе Шымкент (материалы на русском, английском, казахском языках)</a>
+                    <a href="#">Политика конфеденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script src="modal/js/jquery-modal-video.min.js"></script>
+    <script src="js/script.js"></script>
+   
+</html>

@@ -1,0 +1,277 @@
+/*-----------Старница для коттеджей---------*/
+.cottages-info {
+    width: 50%;
+    margin: 0 auto;
+    p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+}
+.cottages-modal {
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+.pages-subtitle {
+    text-align: center;
+    h2 {
+        text-align: center;
+        font-size: 29px;
+        color: #2b1b35;
+        font-family: ProximaNova-Bold;
+        padding: 30px 0;
+    }
+}
+.modal__buttons-item {
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+    &:after {
+        top: 0;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        -webkit-box-shadow: 8px 28px 100px 80px rgba(34, 60, 80, 0.23) inset;
+        -moz-box-shadow: 8px 28px 100px 80px rgba(34, 60, 80, 0.23) inset;
+        box-shadow: 8px 28px 100px 80px rgba(34, 60, 80, 0.23) inset;
+    }
+    &:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #164cb5ad!important;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        opacity: 0;
+    }
+    p {
+        color: #fff;
+        position: absolute;
+        z-index: 1;
+        bottom: 15px;
+        left: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+}
+.cottages-qest {
+    justify-content: space-between;
+    @include u-row-flex(0);
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.cottages-qest__item {
+    @include size(6);
+    text-align: center;
+    position: relative;
+    img {
+        margin-bottom: 25px;
+    }
+    p {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .quest-btn {
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 11px 25px;
+        border-radius: 25px;
+        background: linear-gradient(180deg, #2960CC 0%, rgba(18, 72, 178, 0) 100%), #1248B2;
+        &:hover {
+            background: #003499;
+        }
+    }
+    .quest-phone {
+        color: #2B1B35;
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+.cottages-qest__item-before {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #2b1b3540;
+    opacity: .5;
+}
+.cottages-qest__item-after {
+    position: absolute;
+    top: 105px;
+    right: -24px;
+    background: #fff;
+    padding: 10px;
+}
+.cottages-video {
+    border-top: 1px solid #ccc;
+    margin-top: 60px;
+    .main-media {
+        justify-content: center !important;
+        .main-media-one {
+            height: 510px !important;           
+        }
+    }
+}
+.cottages-step__list {
+    @include u-row-flex(0);
+    justify-content: space-between;
+    margin: 60px 0;
+}
+.cottages-step__item {
+    @include size(3);
+    position: relative;
+    &:before {
+        background: url(../img/cottegs/icon-line.svg) repeat-x 0 0;
+        bottom: 0;
+        height: 2px;
+        left: -22px;
+        top: 19px;
+        width: auto;
+        position: absolute;
+    }
+    .cottages-step__number {
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        background: #1248B2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 25px;
+        margin: 0 auto 20px auto;
+    }
+    img {
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+    .cottages-step__title {
+        color: #2B1B35;
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    ul {
+        li {
+            font-size: 16px;
+            margin-bottom: 20px;
+            position: relative;
+            &:before {
+                position: absolute;
+                border-radius: 20px;
+                width: 7px;
+                height: 6px;
+                background-color: #1248b2;
+                top: 5px;
+                left: -17px; 
+                content: '';
+            }
+        }
+    }
+}
+.cottages-table {
+    margin-top: 60px;
+    border-collapse: collapse;
+    table {
+        border-spacing: 0 0;
+        tbody {
+            tr {
+                &:first-child {
+                    td {
+                        border-bottom: 3px solid #E4E7EB;
+                        padding: 10px 10px;
+                    }
+                }
+                &:last-child {
+                    td {
+                        border-bottom: none;
+                    }
+                }
+                td {
+                    border: 1px double #E4E7EB;
+                    border-left: none;
+                    border-right: none;
+                    border-top: none;
+                    padding: 20px 10px;
+                    section {
+                        height: 280px;
+                    }
+                    img {
+                        height: 280px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        text-align: left;
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+                    ul {
+                        li {
+                            font-size: 16px;
+                            margin-bottom: 20px;
+                            position: relative;
+                            &:before {
+                                position: absolute;
+                                border-radius: 20px;
+                                width: 7px;
+                                height: 6px;
+                                background-color: #1248b2;
+                                top: 5px;
+                                left: -17px; 
+                                content: '';
+                            }
+                        }
+                    }
+                    a {
+                        color: #164cb5!important;
+                        font-weight: 600;
+                        &:hover {
+                            opacity: .5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.cottage-qest-border {
+    border-top: 1px solid #ccc;
+    margin-top: 60px;
+}
+.cottages-catalog {
+    border-top: 1px solid #ccc;
+    margin-top: 60px;
+    .catalog-one__list {
+        .catalog-two {
+            @include size(4.28);
+        }
+    }
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        color: #2b1b35;
+        font-family: ProximaNova-Bold;
+        padding: 30px 0;
+    }
+    .catalog-list__border {
+        border-bottom: none;
+    }
+}

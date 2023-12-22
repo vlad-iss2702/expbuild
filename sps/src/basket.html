@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    
+    
+    @@include('tmp/_style.html')
+    
+</head>
+	
+<body>
+    @@include('tmp/_header.html')
+    <main>
+        <div class="breadcrumb">
+            <div class="container">
+                    <a href="">Главная</a> <span>></span> <strong>Корзина</strong>
+            </div>
+        </div>
+        <div class="basket">
+            <div class="container">
+                <div class="basket-block">
+                    <div class="basket-list">
+                        <h2>Корзина</h2>
+                        <div class="basket-list__product">
+                            <ul>
+                                <li class="basket-list__blocks">
+                                    <p class="basket-list__block-one">
+                                        Товары
+                                    </p>
+                                    <p class="basket-list__block-two">
+                                        Количество
+                                    </p>
+                                    <p class="basket-list__block-three">
+                                        Цена
+                                    </p> 
+                                </li>
+                                <li class="basket-list__blocks">
+                                    <div class="basket-list__block-one">
+                                        <img src="img/products/cart-img-1.jpg" alt="Изображение продукта">
+                                        <p class="basket-list__name">835H (джойстик) 1,8 м3</p>
+                                    </div>
+                                    <div class="basket-list__block-two">
+                                        <div class="basket-list__qant">
+                                            <span><i class="icon-subtract"></i></span>
+                                            <span>1</span>
+                                            <span><i class="icon-add"></i></span>
+                                            <p><i class="icon-delete"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="basket-list__block-three">
+                                        <p class="basket-list__price">100 657 231 тнг</p>
+                                    </div> 
+                                </li>
+                                <li class="basket-list__blocks">
+                                    <div class="basket-list__block-one">
+                                        <img src="img/products/cart-img-1.jpg" alt="Изображение продукта">
+                                        <p class="basket-list__name">835H (джойстик) 1,8 м3</p>
+                                    </div>
+                                    <div class="basket-list__block-two">
+                                        <div class="basket-list__qant">
+                                            <span><i class="icon-subtract"></i></span>
+                                            <span>1</span>
+                                            <span><i class="icon-add"></i></span>
+                                            <p><i class="icon-delete"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="basket-list__block-three">
+                                        <p class="basket-list__price">100 657 231 тнг</p>
+                                    </div> 
+                                </li>
+                                <li class="basket-list__blocks">
+                                    <div class="basket-list__block-one">
+                                        <img src="img/products/cart-img-1.jpg" alt="Изображение продукта">
+                                        <p class="basket-list__name">835H (джойстик) 1,8 м3</p>
+                                    </div>
+                                    <div class="basket-list__block-two">
+                                        <div class="basket-list__qant">
+                                            <span><i class="icon-subtract"></i></span>
+                                            <span>1</span>
+                                            <span><i class="icon-add"></i></span>
+                                            <p><i class="icon-delete"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="basket-list__block-three">
+                                        <p class="basket-list__price">100 657 231 тнг</p>
+                                    </div> 
+                                </li>
+                            </ul>
+                            <a href="">Очистить корзину</a>
+                        </div>
+                    </div>
+                    <div class="basket-order">
+                        <h2>Сумма заявки</h2>
+                        <div class="basket-order__block">
+                            <div class="basket-order__head">
+                                <p class="basket-order__qant">
+                                    1 товар на сумму
+                                </p>
+                                <p class="basket-order__price">
+                                    100 657 231 тнг
+                                </p>
+                            </div>
+                            <div class="basket-order__pay">
+                                <p class="basket-pay__text">
+                                    К оплате
+                                </p>
+                                <p class="basket-pay__peice">
+                                    100 657 231 тнг
+                                </p>
+                            </div>
+                            <a class="basket-order__add" href="">В корзину</a>
+                            <div class="basket-order__social">
+                                <p>Связаться с менеджерами</p>
+                                <ul>
+                                    <li><a href=""><img src="img/icon/youtube-icon.svg" alt="Ютуб" style="height: 26px;"></a></li>
+                                    <li><a href=""><img src="img/icon/telegram-icon.svg" alt="Телеграм" style="height: 28px;"></a></li>
+                                    <li><a href=""><img src="img/icon/instagram-icon.svg" alt="Инстаграм" style="height: 28px;"></a></li>
+                                    <li><a href=""><img src="img/icon/facebook-icon.svg" alt="Фейсбук" style="height: 24px;"></a></li>
+                                    <li><a href=""><img src="img/icon/whatsap-icon.svg" alt="Ватсап" style="height: 24px;"></a></li>
+                                </ul>
+                            </div>
+                            <a class="basket-order__feedback" href="">Обратный звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+     @@include('tmp/_footer.html')
+
+     @@include('tmp/_script.html')
+    </body>
+</html>
+
+

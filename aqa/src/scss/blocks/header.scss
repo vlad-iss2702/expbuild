@@ -1,0 +1,68 @@
+/*------Стили для шапки сайта-------*/
+.header__top {
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
+    align-items: center;
+    img {
+        height: 30px;
+        margin-right: 90px;
+    }
+    p {
+        display: flex;
+        font-size: 13px;
+        color: #62626287;
+        a {
+            font-size: 25px;
+            color: #000;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+    }
+}
+.header__bottom {
+    border-top: 1px solid #ccc;
+}
+.header-blocks {
+    @include u-row-flex(0);
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.header-blocks-menu {
+    ul {
+        display: flex;
+        li {
+            margin-right: 40px;
+            a {
+                font-size: 13px;
+                text-transform: uppercase;
+                color: #164CB5;
+                font-weight: 600;
+                letter-spacing: 2px;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+.header-blocks-search {
+    a {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #164CB5;
+        font-weight: 600;
+        letter-spacing: 2px;
+        i {
+            font-size: 19px;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

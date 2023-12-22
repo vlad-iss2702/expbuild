@@ -1,0 +1,12 @@
+@font-face {
+    font-family: PFDinTextCompPro;
+    src: local("PFDinTextCompPro"), local("PFDinTextCompPro-Regular"), url(pfdintextcomppro-regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 400
+}
+@font-face {
+    font-family: PFDinTextCompPro;
+    src: local("PFDinTextCompPro"), local("PFDinTextCompPro-Bold"), url(pfdintextcomppro-bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 700
+}

@@ -1,0 +1,47 @@
+/*---------MY--------*/
+
+body {
+	background: #f5f6f7;
+	font-family: "ProximaNova-Regular";
+}
+.wrapper-basic {
+	max-width: 1600px;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 0 10px #adaeaf;
+}
+.container {
+	@include wrapper();
+}
+.container-header {
+	max-width: 1450px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+img {
+	max-width: 100%;
+}
+p {
+	font-size: 14px;
+	color: #171718;
+	line-height: 20px;
+}
+/*h1,h2,h3,h4,h5,h6 {
+	letter-spacing: 0.5px;
+}*/
+
+/*-------------------------*/
+
+@import 'blocks/header';
+
+@import 'blocks/main';
+@import 'blocks/catalog';
+@import 'blocks/blog';
+@import 'blocks/cottages';
+@import 'blocks/sale';
+@import 'blocks/support';
+@import 'blocks/aboutcompany';
+
+
+@import 'blocks/footer';

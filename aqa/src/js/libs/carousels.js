@@ -1,0 +1,28 @@
+$('.main-carousel').owlCarousel({
+    margin: 0,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    animateOut: 'fadeOut',
+    smartSpeed: 500,
+    navText : ["<i class=\"icon-arrow-left\"></i> ", "<i class=\"icon-arrow-right\"></i>"],
+    items: 1,
+})
+$('.info-carousel').owlCarousel({
+    margin: 0,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    animateOut: 'fadeOut',
+    smartSpeed: 500,
+    navText : ["<i class=\"icon-arrow-left\"></i> ", "<i class=\"icon-arrow-right\"></i>"],
+    items: 1,
+})

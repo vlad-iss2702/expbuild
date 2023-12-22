@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('MyriadPro-Bold.eot');
+    src: url('MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MyriadPro-Bold.woff2') format('woff2'),
+        url('MyriadPro-Bold.woff') format('woff'),
+        url('MyriadPro-Bold.ttf') format('truetype'),
+        url('MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helios';
+    src: url('Helios.eot');
+    src: url('Helios.eot?#iefix') format('embedded-opentype'),
+        url('Helios.woff2') format('woff2'),
+        url('Helios.woff') format('woff'),
+        url('Helios.ttf') format('truetype'),
+        url('Helios.svg#Helios') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helios';
+    src: url('HeliosBold.eot');
+    src: url('HeliosBold.eot?#iefix') format('embedded-opentype'),
+        url('HeliosBold.woff2') format('woff2'),
+        url('HeliosBold.woff') format('woff'),
+        url('HeliosBold.ttf') format('truetype'),
+        url('HeliosBold.svg#HeliosBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

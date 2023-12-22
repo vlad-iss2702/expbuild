@@ -1,0 +1,99 @@
+/*--------Стили для подвала сайта------*/
+footer {
+    padding: 40px 0;
+}
+.footer-block {
+    @include u-row-flex(0);
+    justify-content: space-between;
+}
+.footer-block__item {
+    @include size(2.6);
+    @include size-mds(4);
+    @include size-sm(6);
+    @include size-xs(12);
+    @include sm-block {
+        margin-bottom: 20px;
+    }
+    @include xs-block {
+        text-align: center;
+    }
+    img {
+        height: 70px;
+        margin-bottom: 20px;
+    }
+    p {
+        color: #696969;
+        font-size: 18px;
+        strong {
+            color: #171718;
+            margin-bottom: 10px;
+            display: block;
+        }
+        span {
+            color: #171718;
+            margin-bottom: 10px;
+            display: block;
+        }
+        a {
+            color: #171718;
+            font-weight: 600;
+            margin-bottom: 30px;
+            display: block;
+            &:hover {
+                color: #ffbe00;
+            }
+        }
+    }
+    ul {
+        li {
+            margin-bottom: 5px;
+            list-style: square;
+            a {
+                color: #171718;
+                &:hover {
+                    color: #ffbe00;
+                }
+            }
+        }
+    }
+}
+.footer-block__social {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    @include xs-block {
+        justify-content: center;
+    }
+    li {
+        margin-right: 10px;
+        list-style: none !important;
+        a {
+            img {
+                height: 25px;
+                width: auto;
+            }
+        }
+    }
+}
+.footer-block__time {
+    font-family: TTNorms-Medium;
+    color: #171718 !important;
+}
+.footer-block__number {
+    margin-top: 20px;
+    a {
+        color: #171718;
+        font-size: 20px;
+        margin-bottom: 0 !important;
+        line-height: 5px;
+    }
+}
+.footer-block__feedback {
+    font-weight: 300!important;
+    border: 2px solid #ffbe00;
+    padding: 9px 44px;
+    border-radius: 35px;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #171718;
+}
